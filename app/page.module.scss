@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Abraham';
+  src: url('../src/fonts/1\ Abraham\ Demo.otf');
+}
+
+@font-face {
+  font-family: 'Cafe';
+  src: url('../src/fonts/Cafe\ Francoise_D.otf');
+}
+
+.header{
+padding: 8px;
+display: flex;
+flex-direction: column;
+gap: 12px;
+width: 100%;
+height: 700px;
+justify-content: end;
+position: relative;
+.bg{
+  background: url('../src/assets/mike-PxJ9zkM2wdA-unsplash\ \(2\).jpg');
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  opacity: 0.7;
+  position: absolute;
+  background-size: 100% 900px;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+h1,p,button{
+  position: static;
+  z-index: 5000;
+}
+h1{
+  font-size: 3rem;
+  font-family: 'Abraham';
+}
+p{
+  font-family: 'Cafe';
+  width: 620px;
+  color: #1B1B1B;
+}
+button{
+  padding: 4px 32px;
+  font-family: 'Abraham';
+  border-radius: 8px;
+  border: 2px solid #3D3D3D;
+  color: #EFBC02;
+  background-color: #2C2C2C;
+  width: max-content;
+  margin-bottom: 60px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+}
+
+.menu{
+  background-color: #1B1B1B;
+  padding: 20px;
+  h2{
+    font-size: 2.5rem;
+    font-family: 'Abraham';
+    color: #FFC800;
+    text-align: center;
+  }
+ .buttons{
+  button{
+    font-family: 'Abraham';
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    p{
+      display: inline-block;
+      margin-left: 4px;
+      color: #D6A904;
+      &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+ }
+
+  .card{
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    padding: 20px;
+    .infos{
+      h3{
+        font-family: 'Abraham';
+        color: #DFB004;
+        margin-top: -4px;
+      }
+      p{
+        margin-bottom: 4px;
+        font-family: 'Cafe';
+        width: 400px;
+        color: #FFFFFF;
+      }
+      button{  
+      padding: 4px 32px;
+      background-color: #2C2C2C;
+      border: 2px solid #3D3D3D;
+      border-radius: 8px;
+      a{
+        text-decoration: none;
+        font-family: 'Abraham';
+        color: #EFBC02;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      }
+    }
+  }
+}

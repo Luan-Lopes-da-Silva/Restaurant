@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Abraham';
+  src: url('../../src/fonts/1\ Abraham\ Demo.otf');
+}
+
+@font-face {
+  font-family: 'Cafe';
+  src: url('../../src/fonts/Cafe\ Francoise_D.otf');
+}
+
+.main{
+background-color: #1B1B1B; 
+.header{
+padding: 20px;
+display: grid; 
+grid-template-columns: 600px 600px;
+place-content: center;
+align-items: start;
+
+h1{
+font-family: 'Abraham';
+font-size: 3rem;
+color: #DFB004;
+}
+p{
+font-family: 'Cafe';
+font-size: 1.1rem;
+width: 260px;
+color: #FFFFFF;
+}
+}
+}
+
+.ingredients{
+  margin-top: 40px;
+  padding: 20px;
+  h2{
+    font-size: 2.5rem;
+    color: #FFC800;
+    font-family: 'Abraham';
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .container{
+    display: flex;
+    gap: 20px;
+    div{
+      p{
+        text-align: center;
+        font-family: 'Cafe';
+        color: #FFFFFF;
+      }
+    margin-bottom: 40px;
+    }
+  }
+  .summary{
+  font-family: 'Cafe';
+  width: 500px;
+  color: #FFFFFF; 
+  } 
+}
+
+.fbs{
+  padding: 20px;
+  h2{
+    font-size: 2.5rem;
+    color: #FFC800;
+    font-family: 'Abraham';
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  article{
+    margin: 32px 0px;
+    header{
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      img{
+        border-radius: 50%;
+      }
+      h5{
+        font-family: 'Abraham';
+        color: #D6A904;
+        font-size: 1.2rem;
+      }
+    }
+    .coment{
+        margin-left: 52px;
+        font-family: 'Cafe';
+        color: #FFFFFF;
+        width: 525px;
+        margin-bottom: 8px;
+    }
+    footer{
+      display: flex;
+      gap: 12px;
+      font-family: 'Abraham';
+      align-items: flex-end;
+      font-size: 1.2rem;
+      color: #FFFFFF;
+      p{
+        display: inline-block;
+      }
+    img{
+    object-fit: cover;
+    &:hover{
+      cursor: pointer;
+    } 
+    }
+    .likes{
+      display: flex;
+      background-color: #716F6F;
+      width: 70px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid #616161;
+    }
+    }
+  }
+}

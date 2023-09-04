@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Abraham';
+  src: url('../../src/fonts/1\ Abraham\ Demo.otf');
+}
+
+@font-face {
+  font-family: 'Cafe';
+  src: url('../../src/fonts/Cafe\ Francoise_D.otf');
+}
+
+@font-face {
+  font-family: 'Bivoac';
+  src: url('../../src/fonts/Bivoac\ Reguler\ Demo.otf');
+}
+
+.main{
+background-color: #1B1B1B;
+padding: 30px;
+h1{
+  text-align: center;
+  font-size: 3rem;
+  color: #FFC800;
+  font-family: 'Abraham';
+  margin-bottom: 16px;
+}
+.container{
+  margin-bottom: 40px;
+  .header{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  
+    h3{
+      font-family: 'Abraham';
+      color: #FFC800;
+    }
+  }
+
+  .cards{
+    border-top: 2px solid #FFC800;
+    border-right: 2px solid #FFC800;
+    display: grid;
+    grid-template-columns: repeat(2,350px);
+    width: max-content;
+    article{
+    border-bottom: 2px solid #FFC800;
+    border-left:2px solid #FFC800 ;
+    h2{
+      border-bottom: 2px solid #FFC800;
+      padding: 12px;
+      font-family: 'Bivoac';
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+    }
+    .content{
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      p{
+        margin-top: 8px;
+        font-family: 'Cafe';
+        width: 250px;
+        color: #FFFFFF;
+      }
+      button{
+        margin-top: 8px;
+        margin-bottom: 20px;
+        background-color: #2C2C2C;
+        border: 2px solid #3D3D3D;
+        border-radius: 8px;
+        p{
+          margin-top: 0px;
+          padding: 12px;
+          color: #FFC800;
+          margin: auto auto;
+        }
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    }
+  }
+}
+}

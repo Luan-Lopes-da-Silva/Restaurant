@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Abraham';
+  src: url('../../src/fonts/1\ Abraham\ Demo.otf');
+}
+
+@font-face {
+  font-family: 'Cafe';
+  src: url('../../src/fonts/Cafe\ Francoise_D.otf');
+}
+
+@font-face {
+  font-family: 'Bivoac';
+  src: url('../../src/fonts/Bivoac\ Reguler\ Demo.otf');
+}
+
+.main{
+  background-color: #1B1B1B;
+  padding: 12px;
+  h2{
+    font-size: 3rem;
+    font-family: 'Abraham';
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFC800;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    row-gap: 30px;
+    article{
+      h4{
+        font-family: 'Abraham';
+        font-size: 1.5rem;
+        color: #FFC800;
+        margin-bottom: 8px;
+      }
+
+      li{
+        margin-bottom: 4px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .support{
+    margin-bottom: 30px;
+    p{
+      font-family: 'Courier New', Courier, monospace;
+      width: 1300px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+  }
+
+  .form{
+    h3{
+      font-size: 2rem;
+      font-family: 'Abraham';
+      text-align: center;
+      color: #FFC800;
+      margin-bottom: 30px;
+    }
+    label,textarea,button{
+      display: block;
+    }
+
+    label{
+    font-family: 'Abraham';
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    }
+
+    input,textarea{
+      margin-bottom: 16px;
+      margin-top: 4px;
+      padding: 8px;
+      width: 400px;
+      border-radius: 8px;
+      border: 2px solid #363636;
+      background-color: #2C2C2C;
+      &::placeholder{
+        color: #3D3D3D;
+        font-family: 'Bivoac';
+      }
+    }
+
+    button{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      width: 150px;
+      padding: 8px 32px;
+      background-color: #2C2C2C;
+      border-radius: 8px;
+      border: 2px solid #3D3D3D;
+      font-family: 'Abraham';
+      font-size: 1.1rem;
+      color: #FFC800;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}

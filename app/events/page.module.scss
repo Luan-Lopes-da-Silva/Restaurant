@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Abraham';
+  src: url('../../src/fonts/1\ Abraham\ Demo.otf');
+}
+
+@font-face {
+  font-family: 'Cafe';
+  src: url('../../src//fonts/Cafe\ Francoise_D.otf');
+}
+
+.main{
+  background-color: #1B1B1B;
+  padding: 12px;
+  h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Abraham';
+    color: #FFC800;
+    margin-bottom: 30px;
+  }
+  p,li{
+    margin-bottom: 12px;
+    font-family: 'Cafe';
+    color: #FFFFFF;
+  }
+  li{
+    padding: 12px;
+  }
+  .photos{    
+    .principal{
+      display: block;
+      margin: auto auto;
+    }
+    .galery{
+      justify-content: center;
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+      img:hover{
+        cursor: pointer;
+        border: 2px solid #FFC800;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Bivoac';
+  src: url('../src/fonts/Bivoac\ Reguler\ Demo.otf');
+}
+
+@font-face {
+  font-family: 'Abraham';
+  src: url('../src/fonts/1\ Abraham\ Demo.otf');
+}
+
+@font-face {
+  font-family: 'French';
+  src: url('../src/fonts/Frenchpress\ freefont.otf');
+}
+
+
+.modal{
+  width: 500px;
+  height: 600px;
+  background: url('../src/assets/mike-PxJ9zkM2wdA-unsplash\ \(2\).jpg');
+  background-position: center;
+  background-size: 900px 100%;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  z-index: 7000;
+  top: 20%;
+  left: 40%;
+ .qr{
+  background-color: #D9D9D9; 
+  border-radius: 50%;
+  padding: 24px;
+ }
+ h1{
+  font-family: 'Abraham';
+  font-size: 2.5rem;
+  margin-top: -12px;
+  margin-left: 400px;
+  &:hover{
+   cursor: pointer;
+   color: #DFB004; 
+  }
+ }
+  p{
+    width: 330px;
+    color: #FFFFFF;
+    font-family: 'Abraham';
+    font-size: 1.5rem;
+  }
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+  background-color: #222222;
+  nav{
+    display: flex;
+    align-items: center;
+    ul{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      li{
+        font-family: 'Bivoac';
+        color: #FFFFFF;
+        &:hover{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    button{
+      font-family: 'Abraham';
+      padding: 4px 24px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1.1rem;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    button:nth-child(5){
+      background-color: #DFB004;
+      color: #1B1B1B;
+    }
+    button:nth-child(6){
+      background-color: #2C2C2C;
+      color: #EFBC02;
+    }
+    }
+  }
+}
+
+.footer{
+  padding: 12px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  background-color: #222222;
+  p{
+    font-size: 1.3rem;
+    font-family:'French';
+    color: #FFFFFF;
+  }
+}
+
+.desactive{
+  opacity: 0.7;
+}
