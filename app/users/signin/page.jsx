@@ -1,5 +1,9 @@
 import UsersLayout from "@/src/layouts/UsersLayout";
 
+export const metadata = {
+  title: 'Signin'
+}
+
 export default function Signin(){
   return(
     <UsersLayout>

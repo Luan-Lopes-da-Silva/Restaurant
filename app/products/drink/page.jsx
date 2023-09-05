@@ -11,11 +11,15 @@ import avatar2 from '@/src/assets/leilani-angel-K84vnnzxmTQ-unsplash (1).jpg'
 import avatar3 from '@/src/assets/michael-dam-mEZ3PoFGs_k-unsplash (1).jpg'
 import emote from '@/src/assets/emote.svg'
 import like from '@/src/assets/like.svg'
+import DefaultLayout from "@/src/layouts/DefaultLayout";
 
+export const metadata = {
+  title: 'Drink'
+}
 
 export default function Drink(){
   return(
-  <>
+  <DefaultLayout>
   <main className={style.main}>
     <section className={style.header}>
     <Image
@@ -169,6 +173,6 @@ export default function Drink(){
     </section>
   </main>
   
-  </>
+  </DefaultLayout>
   )
 }

@@ -11,7 +11,7 @@ export default function UsersLayout({children}){
         <Image
         alt='bg'
         src={bg}
-        width={500}
+        width={600}
         />
       </div>
       <div className={style.secondColumn}>{children}</div>

@@ -44,15 +44,18 @@ p{
 }
 button{
   padding: 4px 32px;
-  font-family: 'Abraham';
   border-radius: 8px;
   border: 2px solid #3D3D3D;
-  color: #EFBC02;
   background-color: #2C2C2C;
   width: max-content;
   margin-bottom: 60px;
   &:hover{
     cursor: pointer;
+  }
+  a{
+  font-family: 'Abraham';
+  color: #EFBC02;
+  text-decoration: none;
   }
 }
 }

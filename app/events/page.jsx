@@ -5,9 +5,15 @@ import photo2 from '@/src/assets/photo2.svg'
 import photo3 from '@/src/assets/photo3.svg'
 import photo4 from '@/src/assets/photo4.svg'
 import photo5 from '@/src/assets/photo5.svg'
+import DefaultLayout from "@/src/layouts/DefaultLayout";
+
+export const metadata = {
+  title: 'Eventos'
+}
 
 export default function Events(){
   return(
+    <DefaultLayout>
     <main className={style.main}>
       <section className={style.content}>
         <h1>Festival kids</h1>
@@ -54,5 +60,6 @@ export default function Events(){
         </div>
       </section>
     </main>
+    </DefaultLayout>
   )
 }

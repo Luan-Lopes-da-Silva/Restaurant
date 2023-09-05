@@ -1,9 +1,15 @@
 import Image from "next/image";
 import style from './page.module.scss'
 import send from '@/src/assets/send.svg'
+import DefaultLayout from "@/src/layouts/DefaultLayout";
+
+export const metadata = {
+  title: 'Contate-Nos'
+}
 
 export default function Contact(){
   return(
+    <DefaultLayout>
     <main className={style.main}>
       <h2>Nos contate</h2>
       <section className={style.container}>
@@ -61,5 +67,6 @@ export default function Contact(){
         </form>
       </section>
     </main>
+    </DefaultLayout>
   )
 }

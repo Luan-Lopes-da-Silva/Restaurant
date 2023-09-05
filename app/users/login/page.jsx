@@ -2,6 +2,10 @@ import UsersLayout from "@/src/layouts/UsersLayout";
 import style from './page.module.scss'
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Login'
+  }
+
 export default function Login(){
   return(
     <UsersLayout>

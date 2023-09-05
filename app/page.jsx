@@ -4,26 +4,26 @@ import vegan from '@/src/assets/Vector.svg'
 import twoMeats from '@/src/assets/Group 23.svg'
 import threeMeats from '@/src/assets/Group 26.svg'
 import Image from 'next/image'
-import ham1 from '@/src/assets/sandra-martins-FqQaP86eEes-unsplash (1).jpg'
-import ham2 from '@/src/assets/deryn-macey-kPLccIMtS8E-unsplash (1).jpg'
-import ham3 from '@/src/assets/taylor-harding-8UjWV6iptCk-unsplash (1).jpg'
-import ham4 from '@/src/assets/likemeat-v6KsaQtqINc-unsplash (1).jpg'
+import ham1 from '@/src/assets/vegan1.svg'
+import ham2 from '@/src/assets/vegan2.svg'
+import ham3 from '@/src/assets/vegan3.svg'
+import ham4 from '@/src/assets/vegan4.svg'
 import Link from 'next/link'
 import DefaultLayout from '@/src/layouts/DefaultLayout'
 
-
+export const metadata = {
+title: 'Home'
+}
 
 export default function Home() {
   return (
     <DefaultLayout>
-
-    
     <main>
       <section className={style.header}>
       <div className={style.bg}></div>  
       <h1>What is lorem ipsum</h1>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type ....</p>
-      <button>see more</button>
+      <button><Link href={'/events'}>see more</Link></button>
       </section>
       <section className={style.menu}>
         <h2>Our Menu</h2>
@@ -63,6 +63,7 @@ export default function Home() {
           alt='ham'
           src={ham1}
           width={100}
+         
           />
           <div className={style.infos}>
             <h3>Pixel veggie delight</h3>

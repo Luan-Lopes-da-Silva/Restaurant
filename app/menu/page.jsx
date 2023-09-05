@@ -10,9 +10,15 @@ import img6 from '@/src/assets/img6.svg'
 import img7 from '@/src/assets/img7.svg'
 import img8 from '@/src/assets/img8.svg'
 import style from './page.module.scss'
+import DefaultLayout from "@/src/layouts/DefaultLayout";
+
+export const metadata = {
+  title: 'Nosso Menu'
+}
 
 export default function Menu(){
   return(
+    <DefaultLayout>
     <main className={style.main}>
       <h1>Nosso menu</h1>
       <section className={style.container}>
@@ -138,5 +144,6 @@ export default function Menu(){
           </div>
       </section>
     </main>
+    </DefaultLayout>
   )
 }

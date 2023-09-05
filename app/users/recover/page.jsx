@@ -1,5 +1,9 @@
 import UsersLayout from "@/src/layouts/UsersLayout"
 
+export const metadata = {
+  title: 'Recuperar senha'
+}
+
 export default function Recover(){
   return(
     <UsersLayout>

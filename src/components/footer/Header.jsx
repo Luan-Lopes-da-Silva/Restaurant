@@ -23,12 +23,12 @@ export default function Header(){
             />
           </div>
           <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Contact Us</li>
-            <li>About Us</li>
-            <button>Login</button>
-            <button>Signin</button>  
+            <Link href={'/'}>Home</Link>
+            <Link href={'/menu'}>Menu</Link>
+            <Link href={'/contact'}>Contact Us</Link>
+            <Link href={'/about'}>About Us</Link>
+            <button><Link href={'users/login'}>Login</Link></button>
+            <button><Link href={'users/signin'}>Signin</Link></button>  
           </ul>  
         </nav>  
         </header>
