@@ -120,3 +120,33 @@ button{
     }
   }
 }
+
+@media(max-width:500px){
+  .header{
+    height: 300px;
+    h1{
+      font-size: 2.5rem;
+    }
+    .bg{
+      height: 300px;
+    }
+    p{
+      width: 350px;
+    }
+    button{
+      margin-bottom: 20px;
+    }
+  }
+  .menu{
+    h2,.buttons{
+      margin-bottom: 20px;
+    }
+  .card{
+    .infos{
+      p{
+        width: 220px;
+      }
+    }
+  }
+  }
+}

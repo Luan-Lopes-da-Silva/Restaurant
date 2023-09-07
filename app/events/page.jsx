@@ -35,27 +35,35 @@ export default function Events(){
         src={photo1}
         width={900}
         className={style.principal}
+        layout="responsive"
         />
         <div className={style.galery}>
           <Image
            alt="galery"
            src={photo2}
            width={200}
+           layout="responsive"
           />
           <Image
            alt="galery"
            src={photo3}
            width={200}
+           layout="responsive"
+
           />
           <Image
            alt="galery"
            src={photo4}
            width={200}
+           layout="responsive"
+
           />
           <Image
            alt="galery"
            src={photo5}
            width={200}
+           layout="responsive"
+
           />
         </div>
       </section>

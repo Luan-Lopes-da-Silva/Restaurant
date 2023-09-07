@@ -85,3 +85,19 @@ h1{
   }
 }
 }
+
+@media(max-width:500px){
+  .main{
+   
+    padding: 20px;
+    h1{
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .container{
+      .cards{
+        grid-template-columns: 1fr;
+      }
+    }
+    }
+}

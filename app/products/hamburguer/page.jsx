@@ -27,6 +27,7 @@ export default function Hamburguer(){
     <Image
     alt="hamburguer"
     src={ham}
+    layout="responsive"
     />
     <div>
       <h1>Pixel Veggie Delight</h1>
@@ -68,7 +69,7 @@ export default function Hamburguer(){
         />
         <p>Tomates</p>
       </div>
-      <div>
+      <div className={style.condiment}>
         <Image
         alt="condiments"
         src={condiments}

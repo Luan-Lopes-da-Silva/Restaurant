@@ -107,3 +107,35 @@
     }
   }
 }
+
+@media(max-width:500px){
+  .main{
+    h2{
+      font-size: 2rem;
+    }
+  .container{
+    grid-template-columns: 1fr;
+    article{
+      margin-bottom: 40px;
+      h4{
+        font-size: 1.3rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
+  .support{
+    p{
+      width: 350px;
+    }
+  }
+  .form{
+    input,textarea{
+      width: 350px;
+    }
+  }
+  }
+
+
+}

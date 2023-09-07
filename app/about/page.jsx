@@ -113,6 +113,7 @@ export default function About(){
           width={1000}
           height={600}
           src={exec1}
+          layout='responsive'
         />
         <p>Sophia Mendes e a mente criativa por tras do One Bit Food. Como Chef Executiva, ela fundiu sua paixao pela culinaria com seu amor pela tecnologia para criar um espaco onde os sabores sao aprimorados por experiencias virtuais imersivas. Sophia acredita que a comida e uma forma de arte e expressao, e ela lidera sua equipe na criacao de pratos que contam historias unicas.</p>
       </div>
@@ -123,6 +124,7 @@ export default function About(){
          src={exec2} 
          width={1000}
          height={600}
+         layout='responsive'
         />
         <p>Diego Vega e o Chef de Inovacao Gastronomica do One Bit Food. Com um historico diversificado em cozinhas de todo o mundo, ele traz uma abordagem inovadora a culinaria tradicional. Diego e responsavel por criar pratos que se conectam perfeitamente com os ambientes virtuais, garantindo uma experiencia completa para os clientes.</p>
       </div>
@@ -133,6 +135,7 @@ export default function About(){
         src={exec3}
         width={1000}
         height={600}
+        layout='responsive'
         />
         <p>Lara Fernandes lidera a equipe de tecnologia do One Bit Food. Como Diretora de Tecnologia Imersiva, ela trabalha em estreita colaboracao com os chefs para sincronizar as experiencias virtuais com as refeicoes. Sua habilidade em criar ambientes virtuais que complementam os sabores é fundamental para a magia do restaurante.</p>
       </div>
@@ -143,6 +146,7 @@ export default function About(){
          src={exec4}
          width={1000}
          height={600}
+         layout='responsive'
         />
         <p>Carlos Silva e o mestre por tras do bar do One Bit Food. Com um dom para criar coqueteis que sao verdadeiras obras de arte visuais, ele eleva a experiencia de beber a um novo patamar. Carlos e conhecido por sua criatividade na mistura de ingredientes e projecoees holograficas para criar coqueteis que sao uma atracao por si so.</p>
       </div>
@@ -153,6 +157,7 @@ export default function About(){
          src={exec5}
          width={1000}
          height={600}
+         layout='responsive'
         />
         <p>Eva Almeida e a Coordenadora de Experiencia do Cliente, garantindo que cada visitante do One Bit Food tenha uma experiencia excepcional. Ela lidera a equipe de garcons treinados para guiar os clientes pela jornada culinaria, respondendo a perguntas e garantindo que cada detalhe seja perfeito.</p>
       </div>
