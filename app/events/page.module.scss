@@ -11,6 +11,26 @@
 .main{
   background-color: #1B1B1B;
   padding: 12px;
+  .modal{
+    display: none;
+    position: absolute;
+    top: 105%;
+    left: 25%;
+    img{
+      opacity: 1;
+    }
+  p{
+    position: absolute;
+    right: 20px;
+    top: 2%;
+    font-size: 2rem;
+    transition: .5s;
+    &:hover{
+      cursor: pointer;
+      color: #FFC800;
+    }
+  }
+  }
   h1{
     font-size: 3rem;
     text-align: center;
@@ -30,6 +50,9 @@
     .principal{
       display: block;
       margin: auto auto;
+      &:hover{
+        cursor: pointer;
+      }
     }
     .galery{
       justify-content: center;

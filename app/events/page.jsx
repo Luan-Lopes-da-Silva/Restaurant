@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import style from './page.module.scss'
 import photo1 from '@/src/assets/photo1.svg'
@@ -6,15 +8,49 @@ import photo3 from '@/src/assets/photo3.svg'
 import photo4 from '@/src/assets/photo4.svg'
 import photo5 from '@/src/assets/photo5.svg'
 import DefaultLayout from "@/src/layouts/DefaultLayout";
+import { useRef, useState } from "react";
 
 export const metadata = {
   title: 'Eventos'
 }
 
 export default function Events(){
+  const [photoModal,setPhotoModal] = useState('')
+  const modalRef = useRef('')
+  const photoRef = useRef('')
+
+  function galery(ev){
+    photoRef.current.src = ev.src
+  }
+
+  function modal(ev){
+  setPhotoModal(ev)
+  photoRef.current.src = ev.src
+  modalRef.current.style.display = 'block'
+  }
+
+  function closeModal(ev){
+  modalRef.current.style.display = 'none'
+  }
+
   return(
     <DefaultLayout>
     <main className={style.main}>
+      <div 
+      className={style.modal}
+      ref={modalRef}
+      >
+        <Image
+        src={photoModal}
+        alt="Photo Modal"
+        width={900}
+        />
+        <p
+        onClick={(ev)=>closeModal(ev.currentTarget)}
+        >
+          X
+        </p>
+      </div>
       <section className={style.content}>
         <h1>Festival kids</h1>
         <p>O Festival Kids do One Bit Food de Hamburguer e um evento beneficente ficticio que o restaurante One Bit Food esta organizando para proporcionar um dia de diversao, comida deliciosa e solidariedade para as criancas da comunidade. O evento tem como objetivo principal arrecadar fundos e doacoes para apoiar instituicoes locais que cuidam de criancas carentes.</p>
@@ -36,6 +72,8 @@ export default function Events(){
         width={900}
         className={style.principal}
         layout="responsive"
+        onClick={(ev)=>modal(ev.currentTarget)}
+        ref={photoRef}
         />
         <div className={style.galery}>
           <Image
@@ -43,27 +81,28 @@ export default function Events(){
            src={photo2}
            width={200}
            layout="responsive"
+           onClick={(ev)=>galery(ev.currentTarget)}
           />
           <Image
            alt="galery"
            src={photo3}
            width={200}
            layout="responsive"
-
+          onClick={(ev)=>galery(ev.currentTarget)}
           />
           <Image
            alt="galery"
            src={photo4}
            width={200}
            layout="responsive"
-
+           onClick={(ev)=>galery(ev.currentTarget)}
           />
           <Image
            alt="galery"
            src={photo5}
            width={200}
            layout="responsive"
-
+            onClick={(ev)=>galery(ev.currentTarget)}
           />
         </div>
       </section>

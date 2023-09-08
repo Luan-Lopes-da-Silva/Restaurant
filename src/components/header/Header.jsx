@@ -6,12 +6,13 @@ import Logo from '@/src/assets/Logo.svg'
 import style from '@/app/style.module.scss'
 import menu from '@/src/assets/menu_FILL0_wght400_GRAD0_opsz24.svg'
 import { useRef } from "react";
+import '@/app/globals.scss'
 
 
 export default function Header(){
 const menuRef = useRef(null) 
 function showMenu(ev){
-
+menuRef.current.classList.toggle('active')
 }
 
   return(
